@@ -10,7 +10,7 @@ const TextOfReadme = ({ userName, readMe }) => {
         <Link to={`/${userName}`}>Назад</Link>
       </div>
       <div className="w-2/3 overflow-scroll border border-t-0 border-teal-500 rounded-b px-4 py-3 text-gray-700">
-        <ReactMarkDown>{readMe}</ReactMarkDown>
+        <ReactMarkDown id="description">{readMe}</ReactMarkDown>
       </div>
     </div>
   )

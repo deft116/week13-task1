@@ -14,6 +14,7 @@ const Main = ({ setUserName }) => {
         className="bg-transparent border-b border-teal-500 w-1/3 text-gray-700 py-2 m-2 leading-tight focus:outline-none"
         type="text"
         value={value}
+        id="input-field"
         onChange={controlInput}
       />
 
@@ -21,6 +22,7 @@ const Main = ({ setUserName }) => {
         <button
           className="bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white px-4 py-1 m-2 rounded"
           type="button"
+          id="search-button"
           onClick={() => setUserName(value)}
         >
           Search
